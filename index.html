@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="ms-md-0 ms-5">
+
+    <!-- search-sec -->
+    <section id="search">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-md-6 m-md-0 m-4">
+              <input placeholder="get movies by word..." type="text" class=" form-control" id="getMovInput">
+                </div>
+
+                <div class="col-md-6 m-md-0 m-4 ">
+                    <input placeholder="search..." type="text" class=" form-control" id="searchInput">
+                      </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- navbar -->
+    <nav class="d-flex">
+        <div id="innerNav" class="d-flex flex-column justify-content-between p-3 ">
+            <div class="p-3">
+                <div id="link" class="d-flex flex-column ">
+                    <a  class="link-n" target="now_playing">Now playing</a>
+                    <a class="link-n" target="popular">Popular</a>
+                    <a class="link-n" target="top_rated">Top Rated</a>
+                    <a id="trend">Trending</a>
+                    <a class="link-n" target="upcoming">Upcoming</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </div>
+           
+            <div >
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-globe"></i>
+                </div>
+              
+            <p>Copyright Â© 2019 All Rights<br> Reserved</p>
+        </div>
+        </div>
+
+        <div id="outerNav" class=" d-flex flex-column align-items-center justify-content-between py-4">
+            <img src="./img/logo.png" alt="logo" width="50%" >
+            <div>
+                <a class="btn" id="btnMenu"><i class="fas fa-bars fs-4" ></i></a>
+                <a class="btn" id="btnClose"><i class="fas fa-times fs-4"></i></a>
+            </div>
+
+            <div class="d-flex flex-column ">
+                <i class="fas fa-globe" style="margin-bottom: 20px;"></i>
+                <i class="fas fa-share-alt" style="margin-bottom: 10px;"></i>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- home-sec -->
+    <section id="home">
+        <div class="container px-5">
+            <div class="row" id="row">
+               
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row ">
+                <h2 class="m-md-3 ">ContactUs...</h2>
+
+                <div class="col-md-6">
+                  <div class="m-md-3 m-2 mb-3">
+                    <input type="text" placeholder="Enter Your Name" id="Uname" class="form-control">
+                    <div class="alert alert-danger d-none" id="alertname" role="alert">
+                        include at least 3 letters
+                      </div>
+                  </div>
+                   <div class="m-md-3 m-2 mb-3">
+                    <input type="text" placeholder="Enter Phone" id="phone" class="form-control">
+                    <div class="alert alert-danger d-none" id="alertphone" role="alert">
+                        enter valid phone
+                      </div>
+                   </div>
+                   <div class="m-md-3 m-2 mb-3">
+                    <input type="password" placeholder="Enter Password" id="password" class="form-control">
+                    <div id="alertpass" class="alert alert-danger d-none" role="alert">
+                        you must strenth your password:<br>- 8 to 15 characters<br>- include at least one symbol and capitale letter
+                        </div>
+                   </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="m-md-3 m-2 mb-3">
+                        <input type="email" placeholder="Enter Email" id="email" class="form-control">
+                        <div id="alertemail" class="alert alert-danger d-none" role="alert">
+                            doha@example.com
+                        </div>
+                    </div>
+                    <div class="m-md-3 m-2 mb-3">
+                        <input type="text" placeholder="Enter Age" id="age" class="form-control">
+                        <div class="alert alert-danger d-none" id="alertage" role="alert">
+                            Enter valid age
+                          </div>
+                    </div>
+                    <div class="m-md-3 m-2 mb-3">
+                        <input type="password" placeholder="Enter RePassword" id="rePass" class="form-control">
+                        <div class="alert alert-danger d-none" id="alertrepass" role="alert">
+                            Enter valid Repassword
+                          </div>
+                    </div>
+              
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <button class="btn btn-outline-danger m-3" type="submit" id="btnsub" >Submit</button>
+
+                </div>
+                </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
